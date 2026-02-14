@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Will You Be My Motki Bubu?</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      background-color: #ffe6e6;
+      color: #b30059;
+      padding: 50px 20px;
+    }
+    .button {
+      text-decoration: none;
+      font-size: 24px;
+      background-color: #ff99cc;
+      padding: 15px 30px;
+      border-radius: 10px;
+      color: white;
+      display: inline-block;
+      margin: 15px;
+      cursor: pointer;
+    }
+    .button:hover {
+      background-color: #ff66aa;
+    }
+    .unclickable {
+      background-color: #ffcccc;
+      cursor: not-allowed;
+    }
+    #message, #atataMessage {
+      display: none;
+      margin-top: 50px;
+      font-size: 18px;
+      line-height: 1.6;
+      text-align: left;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>💌 Will You Be My Motki Bubu? 💌</h1>
+
+  <div>
+    <a href="#" class="button" id="yesButton">YES</a>
+    <a href="#" class="button" id="atataButton">atata</a>
+    <span class="button unclickable">NO</span>
+  </div>
+
+  <div id="message">
+    <p>Hi my motki bubu, I am literally writing this letter after a loooong day at work (literally kay OT TY ug 2 hrs), so I'm freestyling this (sorry sa mga typos daan)</p>
+    <p>First off, this is my first time doing this, sauna manungog pa kog corny/cringe sakong mga kauban, but it feels magical karon nga ako na. I don't care if mahurot akong astig points, basta nimo lang hehehe</p>
+    <p>Kaduha, I really wanted to take you gyud sa fancy nga lugar or eat somewhere nga expensiveee hahahaha but tungod sa "Honda Selectable" nga need nako mabayaran in 2 months, postponed nuon haysss, sorry loveee, bawi ra gyud ko, and you know nga mo bawi gyud ko</p>
+    <p>Third, it's funny how in my 25 years of existence, this my first time celebrating Valentine's day with someone- Hannah Louella Cadayona</p>
+    <p>Fourth, I'll probably be in a deep sleep by the time you read this, so let this letter keep you company while I'm dreaming</p>
+    <p>Fifth, if ever anyone buys you flowers or any Valentine-related stuff, get their names and give them to me (amke sure nga maka daug nag 170lbs incline press, maka dagan ug sub30, makapasar ug board exam nga 1 month prep ra, or else dakdakan ko nag barbell sa ulo hehehehehe joke lungs- sagol tinood hehehe)</p>
+    <p>Sixth, nag una na ta ug celeb Valentine's last night? hashahahaha secret rato nato ;)</p>
+    <p>Seventh, did you know that the word "faith" in the Bible originally means 'steadfast'? meaning kay firm, unwavering, and unmoving despite fatigue, struggle, or opposition? Na demosntrate na when Moses had to hold up his hands so the Israelites could win against the Amalekites. Steadfast si Moses ato nga time, and I can assure you, in the same way, I am steadfast with you, I will choose you no matter what</p>
+    <p>You might even be wondering why am I giving you Bible trivia rather than Valentine-realetd, wa lang, assignment na nimo hahahahha Sleep sa ko my motki bubuuuu, please take care and ingni ko unsa imong lunch</p>
+    <p>I love you my Hannah Louella Cadayona</p>
+    <p>See you later</p>
+    <p>Happy Valentines!!!</p>
+  </div>
+
+  <div id="atataMessage">
+    <p>Motki bubu gyud bisag unsaon atata atataaaa</p>
+  </div>
+
+  <script>
+    const yesButton = document.getElementById('yesButton');
+    const atataButton = document.getElementById('atataButton');
+    const message = document.getElementById('message');
+    const atataMessage = document.getElementById('atataMessage');
+
+    yesButton.addEventListener('click', function() {
+      message.style.display = 'block';
+      atataMessage.style.display = 'none';
+    });
+
+    atataButton.addEventListener('click', function() {
+      atataMessage.style.display = 'block';
+      message.style.display = 'none';
+    });
+  </script>
+
+</body>
+</html>
